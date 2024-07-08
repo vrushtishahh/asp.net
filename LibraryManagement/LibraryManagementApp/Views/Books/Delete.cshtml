@@ -1,0 +1,22 @@
+@model LibraryManagementApp.Models.Book
+
+<h1>Delete Book</h1>
+
+<form asp-action="DeleteConfirmed">
+    <input type="hidden" asp-for="Id" />
+    <div>
+        <label>Title</label>
+        <p>@Model.Title</p>
+    </div>
+    <div>
+        <label>Author</label>
+        <p>@Model.Author</p>
+    </div>
+    <div>
+        <label>Year</label>
+        <p>@Model.Year</p>
+    </div>
+    <div>
+        <button type="submit">Delete</button>
+    </div>
+</form>
